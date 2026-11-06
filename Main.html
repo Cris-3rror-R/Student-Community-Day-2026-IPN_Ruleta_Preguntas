@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#161d26">
+    <title>Ruleta de preguntas sobre AWS y la nube</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="Preguntas.js" defer></script>
+    <script src="Ruleta.js" defer></script>
+    <script src="Principal.js" defer></script>
+</head>
+<body>
+    <div class="BannerContenedor">
+        <img
+            class="BannerPagina"
+            src="Imagenes/Banner_Azul.png"
+            alt="Banner azul de AWS Student Community Day">
+    </div>
+    <main class="Aplicacion">
+        <header class="Encabezado">
+            <p class="SobreTitulo">AWS STUDENT COMMUNITY DAY 2026</p>
+            <h1>Ruleta de preguntas</h1>
+            <p class="Subtitulo">Gira, responde y demuestra cuánto sabes de la nube.</p>
+        </header>
+
+        <section id="SeccionRuleta" class="PanelRuleta" aria-labelledby="TituloRuleta">
+            <h2 id="TituloRuleta" class="SoloLectores">Ruleta de preguntas</h2>
+            <div class="ContenedorRuleta">
+                <span class="IndicadorRuleta" aria-hidden="true"></span>
+                <canvas id="LienzoRuleta" width="500" height="500" aria-label="Ruleta con preguntas sobre AWS">
+                    Tu navegador no permite mostrar la ruleta.
+                </canvas>
+            </div>
+            <button id="BotonGirar" class="BotonPrincipal" type="button">Girar la ruleta</button>
+            <p id="EstadoJuego" class="EstadoJuego" role="status" aria-live="polite">
+                Presiona el botón para elegir una pregunta.
+            </p>
+        </section>
+
+        <section id="SeccionPregunta" class="PanelPregunta" aria-labelledby="TextoPregunta" hidden>
+            <div class="TarjetaPregunta">
+                <h2 id="TextoPregunta"></h2>
+                <div id="ContenedorRespuestas" class="Respuestas" aria-label="Respuestas posibles"></div>
+                <div class="Temporizador" aria-label="Tiempo para responder">
+                    <div
+                        id="BarraTemporizador"
+                        class="PistaTemporizador"
+                        role="progressbar"
+                        aria-label="Tiempo restante para responder"
+                        aria-valuemin="0"
+                        aria-valuemax="15"
+                        aria-valuenow="15">
+                        <span class="ProgresoTemporizador"></span>
+                    </div>
+                </div>
+                <p id="MensajeResultado" class="MensajeResultado" role="status" aria-live="assertive"></p>
+            </div>
+        </section>
+    </main>
+    <footer class="PiePagina">
+        <div class="BannerContenedor">
+            <img
+                class="BannerPagina"
+                src="Imagenes/Banner_Azul.png"
+                alt="Banner azul de AWS Student Community Day">
+        </div>
+    </footer>
+</body>
+</html>
