@@ -7,3 +7,5 @@ En vez de utilizar una base de datos como SQL, Postgres o Supabase decidir crear
 La parte de Ruleta.js esta toda la parte de la ruleta.
 En principal está las partes principal del proyecto junto con Main.html
 En el apartado de style.css esta todos los detalles visual para manterner la identidad visual.
+
+El proyecto fue realizado por mi usando el Visual Studio Core con apoyo de Copilot.
